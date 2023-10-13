@@ -8,8 +8,8 @@ COPY ./frontend/ .
 RUN npm run build
 
 # Setup Container
-FROM lsiobase/alpine:3.12 as deploy-stage
-# MAINTANER Your Name "info@selfhosted.pro"
+FROM alpine:3.12.3 as deploy-stage
+# MAINTANER Your Name "shipwright@wickedyoda.com"
 
 # Set Variables
 ENV PYTHONIOENCODING=UTF-8
